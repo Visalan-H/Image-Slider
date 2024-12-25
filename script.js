@@ -1,4 +1,5 @@
 const slider = document.querySelector(".slider");
+const p=document.getElementById("p");
 const max = window.innerWidth / 2;
 const images=Array.from(document.getElementsByClassName("image"));
 console.log(images);
@@ -28,6 +29,7 @@ const handleMouseUp = (e) => {
     slider.dataset.prev=slider.dataset.perc;
 };
 window.onload=()=>{
+    p.style.opacity=1;
     window.addEventListener("mousedown", (e) => handleMouseDown(e));    
     window.addEventListener("mousemove", (e) => handleMouseMove(e));
     window.addEventListener("mouseup", (e) => handleMouseUp(e));
