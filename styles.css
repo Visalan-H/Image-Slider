@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+p{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 100px;
+    pointer-events: none;
+    font-size: 38px;
+    font-family: papyrus,sans-serif;
+}
+img {
+    width: 270px;
+    height: 420px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    border-radius: 1em;
+    transition: object-position 1.5s;
+}
+
+.slider {
+    user-select: none;
+    gap: 2.75em;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    transition: transform 1.3s;
+}
